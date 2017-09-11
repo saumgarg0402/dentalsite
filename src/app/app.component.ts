@@ -1,14 +1,11 @@
 import { Component } from '@angular/core';
+import { Meta, Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  template: `<home></home>`,
+  styles: []
 })
 export class AppComponent {
-  title = 'app works!';
 
-  clicked(element){
-  	console.log("Clicked element : ",element)
-  }
 }

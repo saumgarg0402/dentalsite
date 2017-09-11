@@ -1,31 +1,22 @@
-# Dentalsite
+# Minimal Starter with the CLI
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.28.3.
+## Installation
 
-## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* `npm install` or `yarn`
 
-## Code scaffolding
+## Static or Dynamic
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class/module`.
+This repo demonstrates the use of 2 different forms of Server Side Rendering.
 
-## Build
+**Static** Also known as prerendering - This happens at build time; it renders your application and replaces the dist index.html with a rendered version.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+**Dynamic** - This happens at runtime; you use Server Side Engine such as the `ngExpressEngine` to render your application as requests come in.
 
-## Running unit tests
+## Development
+* run `npm run start` which will start `ng serve`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Prod
+* `npm run build:static` or `npm run build:dynamic` to compile your application for distribution
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
-
-## Deploying to GitHub Pages
-
-Run `ng github-pages:deploy` to deploy to GitHub Pages.
-
-## Further help
-
-To get more help on the `angular-cli` use `ng help` or go check out the [Angular-CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+This demo is built following this guide: https://github.com/angular/angular-cli/wiki/stories-universal-rendering
+Along with https://github.com/angular/universal/tree/master/modules/ng-module-map-ngfactory-loader to enable Lazy Loading
